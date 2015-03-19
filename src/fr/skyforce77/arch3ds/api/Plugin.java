@@ -48,7 +48,7 @@ public abstract class Plugin {
 	/**
      * Called when axis status changed
      */
-	public abstract void onAxis(ArchAxis axis, byte code);
+	public abstract void onAxis(ArchAxis axis, double location);
 	
 	/**
      * Called when server need to refresh screen
