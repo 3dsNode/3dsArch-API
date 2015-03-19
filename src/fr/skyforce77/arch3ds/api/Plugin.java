@@ -1,6 +1,8 @@
 package fr.skyforce77.arch3ds.api;
 
-import java.awt.Graphics2D;
+import fr.skyforce77.arch3ds.api.graphics.ArchGraphics;
+import fr.skyforce77.arch3ds.api.input.ArchAxis;
+import fr.skyforce77.arch3ds.api.input.ArchInput;
 
 public abstract class Plugin {
 
@@ -39,17 +41,20 @@ public abstract class Plugin {
 	public abstract void onTick();
 	
 	/**
-     * Called when server need to refresh topscreen
-     * 
-     * @return plugin topscreen graphics
+     * Called when input status changed
      */
-	public abstract Graphics2D drawTopScreen(Graphics2D graphics);
+	public abstract void onInput(ArchInput input, byte status);
 	
 	/**
-     * Called when server need to refresh bottomscreen
-     * 
-     * @return plugin bottomscreen graphics
+     * Called when axis status changed
      */
-	public abstract Graphics2D drawBottomScreen(Graphics2D graphics);
+	public abstract void onAxis(ArchAxis axis, byte code);
+	
+	/**
+     * Called when server need to refresh screen
+     * 
+     * @return plugin screen graphics
+     */
+	public abstract ArchGraphics drawScreen(ArchGraphics graphics);
 	
 }
