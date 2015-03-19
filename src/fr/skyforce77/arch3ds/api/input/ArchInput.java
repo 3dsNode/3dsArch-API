@@ -43,10 +43,6 @@ public enum ArchInput implements CodeIdentified{
      * @return input or null if unsuccessful
      */
 	public ArchInput byCode(byte code) {
-		for(ArchInput input : values()) {
-			if(input.getCode() == code)
-				return input;
-		}
 		return null;
 	}
 		

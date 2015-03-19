@@ -28,10 +28,6 @@ public enum ArchAxis implements CodeIdentified{
      * @return axis or null if unsuccessful
      */
 	public ArchAxis byCode(byte code) {
-		for(ArchAxis axis : values()) {
-			if(axis.getCode() == code)
-				return axis;
-		}
 		return null;
 	}
 }
