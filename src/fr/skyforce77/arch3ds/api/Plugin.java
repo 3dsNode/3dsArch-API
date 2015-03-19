@@ -23,7 +23,7 @@ public abstract class Plugin {
 	/**
      * Called when this plugin need to be enabled
      */
-	public abstract void onInit();
+	public void onInit(){};
 	
 	/**
      * Called when this plugin is enabled
@@ -33,12 +33,12 @@ public abstract class Plugin {
 	/**
      * Called when this plugin is disabled
      */
-	public abstract void onDisable();
+	public void onDisable(){};
 	
 	/**
      * Called when server ticked
      */
-	public abstract void onTick();
+	public void onTick(){};
 	
 	/**
      * Called when input status changed
@@ -52,9 +52,7 @@ public abstract class Plugin {
 	
 	/**
      * Called when server need to refresh screen
-     * 
-     * @return plugin screen graphics
      */
-	public abstract ArchGraphics drawScreen(ArchGraphics graphics);
+	public abstract void drawScreen(ArchGraphics graphics);
 	
 }
