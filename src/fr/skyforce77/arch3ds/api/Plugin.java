@@ -11,14 +11,18 @@ public abstract class Plugin {
      *
      * @return name of the plugin
      */
-	public abstract String getName();
+	public String getName(){
+		return null;
+	}
 	
 	/**
      * Returns the version of the plugin
      *
      * @return version of the plugin
      */
-	public abstract String getVersion();
+	public Double getVersion(){
+		return null;
+	}
 	
 	/**
      * Called when this plugin need to be enabled

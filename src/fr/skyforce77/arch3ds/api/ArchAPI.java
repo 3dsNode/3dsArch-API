@@ -7,7 +7,7 @@ public abstract class ArchAPI {
      * API version
      * 
      */
-	public static int version = 1;
+	public static double version = 0.1;
 	
 	/**
      * API version string
