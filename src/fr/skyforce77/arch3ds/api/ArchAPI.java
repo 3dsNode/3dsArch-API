@@ -7,11 +7,23 @@ public abstract class ArchAPI {
      * API version
      * 
      */
-	public static double version = 0.1;
+	public static double version = 1.0;
 	
 	/**
      * API version string
      * 
      */
-	public static String versionName = "Citrus";
+	public static String versionName = "Arabica";
+	
+	/**
+     * Server version
+     * 
+     */
+	public static double serverVersion;
+	
+	/**
+     * Server name
+     * 
+     */
+	public static String serverName;
 }
