@@ -42,7 +42,7 @@ public enum ArchInput implements CodeIdentified{
      * 
      * @return input or null if unsuccessful
      */
-	public ArchInput byCode(byte code) {
+	public static ArchInput byCode(byte code) {
 		return null;
 	}
 		
