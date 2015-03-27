@@ -53,12 +53,27 @@ public abstract class ArchGame {
 	/**
      * Called when axis status changed
      */
-	public void onAxis(ArchAxis axis, double location){}
+	public void onAxis(ArchAxis axis, double x, double y){}
 	
 	/**
-     * Called when screen touched
+     * Called when stylus location changed
      */
-	public void onTouched(ArchScreen screen, int x, int y){}
+	public void onStylusMoved(ArchScreen screen, int x, int y){}
+	
+	/**
+     * Called when stylus clicked screen
+     */
+	public void onStylusClicked(ArchScreen screen, int x, int y){}
+	
+	/**
+     * Called when stylus pressed
+     */
+	public void onStylusPressed(ArchScreen screen, int x, int y){}
+	
+	/**
+     * Called when stylus released
+     */
+	public void onStylusReleased(ArchScreen screen, int x, int y){}
 	
 	/**
      * Called when server need to refresh screen
