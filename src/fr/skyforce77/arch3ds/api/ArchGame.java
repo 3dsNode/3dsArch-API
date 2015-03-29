@@ -1,9 +1,10 @@
 package fr.skyforce77.arch3ds.api;
 
-import fr.skyforce77.arch3ds.api.graphics.ArchGraphics;
-import fr.skyforce77.arch3ds.api.graphics.ArchScreen;
-import fr.skyforce77.arch3ds.api.input.ArchAxis;
-import fr.skyforce77.arch3ds.api.input.ArchInput;
+import fr.skyforce77.arch3ds.api.listener.AxisListener;
+import fr.skyforce77.arch3ds.api.listener.GraphicsListener;
+import fr.skyforce77.arch3ds.api.listener.InputListener;
+import fr.skyforce77.arch3ds.api.listener.StylusListener;
+
 
 public abstract class ArchGame {
 
@@ -46,45 +47,59 @@ public abstract class ArchGame {
 	public void onTick(){}
 	
 	/**
-     * Called when input status changed
+     * Register AxisListener
      */
-	@Deprecated
-	public void onInput(ArchInput input, byte status){}
+	public void addAxisListener(AxisListener listener){}
 	
 	/**
-     * Called when axis status changed
+     * Register InputListener
      */
-	@Deprecated
-	public void onAxis(ArchAxis axis, double x, double y){}
+	public void addInputListener(InputListener listener){}
 	
 	/**
-     * Called when stylus location changed
+     * Register GraphicsListener
      */
-	@Deprecated
-	public void onStylusMoved(ArchScreen screen, int x, int y){}
+	public void addGraphicsListener(GraphicsListener listener){}
 	
 	/**
-     * Called when stylus clicked screen
+     * Register StylusListener
      */
-	@Deprecated
-	public void onStylusClicked(ArchScreen screen, int x, int y){}
+	public void addStylusListener(StylusListener listener){}
 	
 	/**
-     * Called when stylus pressed
+     * AxisListener list getter
+     * 
+     * @return AxisListener Array
      */
-	@Deprecated
-	public void onStylusPressed(ArchScreen screen, int x, int y){}
+	public AxisListener[] getAxisListeners(){
+		return null;
+	}
 	
 	/**
-     * Called when stylus released
+     * InputListener list getter
+     * 
+     * @return InputListener Array
      */
-	@Deprecated
-	public void onStylusReleased(ArchScreen screen, int x, int y){}
+	public InputListener[] getInputListeners(){
+		return null;
+	}
 	
 	/**
-     * Called when server need to refresh screen
+     * GraphicsListener list getter
+     * 
+     * @return GraphicsListener Array
      */
-	@Deprecated
-	public void drawScreen(ArchGraphics graphics){}
+	public GraphicsListener[] getGraphicsListeners(){
+		return null;
+	}
+	
+	/**
+     * StylusListener list getter
+     * 
+     * @return StylusListener Array
+     */
+	public StylusListener[] getStylusListeners(){
+		return null;
+	}
 	
 }
