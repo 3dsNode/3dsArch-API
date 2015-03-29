@@ -2,7 +2,7 @@ package fr.skyforce77.arch3ds.api;
 
 public enum APIVersion {
 
-	ARABICA(1.0,2.0);
+	ARABICA(1.0,1.3);
 	
 	private double min, max;
 	

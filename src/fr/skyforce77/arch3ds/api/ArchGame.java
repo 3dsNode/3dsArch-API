@@ -33,7 +33,7 @@ public abstract class ArchGame {
 	/**
      * Called when this plugin is enabled
      */
-	public abstract void onEnable();
+	public void onEnable(){}
 	
 	/**
      * Called when this plugin is disabled
@@ -48,36 +48,43 @@ public abstract class ArchGame {
 	/**
      * Called when input status changed
      */
+	@Deprecated
 	public void onInput(ArchInput input, byte status){}
 	
 	/**
      * Called when axis status changed
      */
+	@Deprecated
 	public void onAxis(ArchAxis axis, double x, double y){}
 	
 	/**
      * Called when stylus location changed
      */
+	@Deprecated
 	public void onStylusMoved(ArchScreen screen, int x, int y){}
 	
 	/**
      * Called when stylus clicked screen
      */
+	@Deprecated
 	public void onStylusClicked(ArchScreen screen, int x, int y){}
 	
 	/**
      * Called when stylus pressed
      */
+	@Deprecated
 	public void onStylusPressed(ArchScreen screen, int x, int y){}
 	
 	/**
      * Called when stylus released
      */
+	@Deprecated
 	public void onStylusReleased(ArchScreen screen, int x, int y){}
 	
 	/**
      * Called when server need to refresh screen
      */
-	public abstract void drawScreen(ArchGraphics graphics);
+	@Deprecated
+	public void drawScreen(ArchGraphics graphics){}
 	
 }

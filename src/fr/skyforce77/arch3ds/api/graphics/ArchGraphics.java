@@ -40,16 +40,24 @@ public abstract class ArchGraphics{
 	/**
      * Called to refresh graphics
      */
+	@Deprecated
 	public static void push() {}
 	
 	/**
      * Called to refresh top graphics
      */
+	@Deprecated
 	public static void pushTop() {}
 	
 	/**
      * Called to refresh bottom graphics
      */
+	@Deprecated
 	public static void pushBottom() {}
+	
+	/**
+     * Called to refresh graphics
+     */
+	public static void push(ArchScreen screen) {}
 
 }
