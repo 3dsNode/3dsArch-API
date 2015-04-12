@@ -1,5 +1,9 @@
 package fr.skyforce77.arch3ds.api;
 
+/**
+ * Replaced by ServerManager
+ */
+@Deprecated
 public abstract class GameManager {
 
 	/**
