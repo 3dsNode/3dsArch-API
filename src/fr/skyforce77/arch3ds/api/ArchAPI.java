@@ -7,14 +7,14 @@ public abstract class ArchAPI {
      * API actual version
      */
 	public static double getAPIActualVersion() {
-		return 2.1;
+		return 3.0;
 	}
 	
 	/**
      * API version
      */
 	public static APIVersion getAPIVersion() {
-		return APIVersion.BUBBLEGUM;
+		return APIVersion.CUPCAKE;
 	}
 	
 	/**

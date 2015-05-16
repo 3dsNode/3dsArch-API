@@ -7,7 +7,7 @@ public abstract class ArchGraphics{
 	/**
      * Instancing with selected type and graphics
      */
-	public ArchGraphics(ArchScreen screen, Graphics2D g2d, int width, int height) {}
+	public ArchGraphics(ArchScreen screen, Graphics2D g2d) {}
 	
 	/**
      * Screen type getter
@@ -40,6 +40,6 @@ public abstract class ArchGraphics{
 	/**
      * Called to refresh graphics
      */
-	public static void push(ArchScreen screen) {}
+	public static void push(ArchScreenType type) {}
 
 }

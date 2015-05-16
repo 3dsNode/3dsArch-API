@@ -3,7 +3,8 @@ package fr.skyforce77.arch3ds.api;
 public enum APIVersion {
 
 	ARABICA(1.0,1.3),
-	BUBBLEGUM(2.0,2.1);
+	BUBBLEGUM(2.0,2.1),
+	CUPCAKE(3.0);
 	
 	private double min, max;
 	
